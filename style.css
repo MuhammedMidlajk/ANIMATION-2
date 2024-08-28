@@ -1,0 +1,117 @@
+*{
+
+    margin: 0;
+    padding: 0;
+}
+.main{
+
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+
+    height: 90vh;
+    width: 900px;
+    background-color: rgb(0, 149, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    
+}
+.fingr{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    animation: hand 1s ease-in-out infinite var(--delay) ;
+    
+}
+.finger1{
+
+    height: 100px;
+    width: 40px;
+    background-color: white;
+    border-radius: 15px;
+    --delay:100ms;
+    
+    
+}
+.finger2{
+
+    height: 125px;
+    width: 40px;
+    background-color: white;
+    border-radius: 15px;
+    --delay:200ms;
+
+}
+.finger3{
+
+    height: 130px;
+    width: 40px;
+    background-color: white;
+    border-radius: 15px;
+    --delay:300ms;
+
+}
+.finger4{
+
+    height: 110px;
+    width: 40px;
+    background-color: white;
+    border-radius: 15px;
+    --delay:400ms;
+
+}
+.nail{
+
+    height: 27px;
+    width: 30px;
+    background-color: rgb(0, 140, 225);
+    border-radius: 10px;
+    margin: 4px;
+    animation: hand 1s ease-in-out infinite var(--delay);
+
+}
+.last{
+
+    width: 50px;
+    height: 35px;
+    background-color:white ;
+    border-radius: 10px 20px 60px 10px;
+    animation: hand 1s ease-in-out infinite var(--delay);
+    --delay:500ms;
+
+
+}
+.lastnail{
+
+    height: 10px;
+    width: 30px;
+    background-color: rgb(0, 140, 225);
+    border-radius: 5px 8px ;
+    margin-left: 20px;
+    
+}
+.row{
+
+    font-size: 40px;
+    color:  rgb(0, 140, 225);
+    animation: hand 1s ease-in-out infinite var(--delay);
+
+    
+}
+@keyframes hand {
+
+    40%{
+        transform: translateY(0);
+    }
+    30%{
+        transform: translateY(-25px);
+    }
+}
